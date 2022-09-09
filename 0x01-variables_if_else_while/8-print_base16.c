@@ -8,7 +8,7 @@
  *
  */
 int main(void)
-}
+{
 	unsigned char a = '0';
 	int i;
 
