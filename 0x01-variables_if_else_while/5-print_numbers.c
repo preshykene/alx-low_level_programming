@@ -11,7 +11,8 @@ int main(void)
 {
 	int i = 10;
 
-	if (i < 10; i++)
+	if (i < 10)
 		printf("%d\n", i);
+	i++;
 	return (0);
 }
