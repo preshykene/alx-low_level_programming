@@ -8,7 +8,6 @@
  *
  * Return: always Return 0
  *
- *
  */
 int main(void)
 {
