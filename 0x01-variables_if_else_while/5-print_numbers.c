@@ -4,7 +4,6 @@
 /**
  * main - Entry point
  *
- *
  * Return: always Return 0
  *
  */
@@ -12,7 +11,7 @@ int main(void)
 {
 	int i = 10;
 
-	for (; i < 10; i++)
+	if (i < 10; i++)
 		printf("%d\n", i);
 	return (0);
 }
