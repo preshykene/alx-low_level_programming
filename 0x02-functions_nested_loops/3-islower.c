@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - checks if c is lower then returns a value 
+ * _islower - checks if c is lower then returns a value
  *
  *@c: integer assigned to c
  */
