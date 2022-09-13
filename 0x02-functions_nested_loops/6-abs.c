@@ -4,7 +4,7 @@
  * _abs - main function
  *
  * @n: integer to make absolute
- * Retun: returns nth integer
+ * Return: returns nth integer
  *
  */
 
