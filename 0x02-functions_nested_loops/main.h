@@ -6,7 +6,7 @@
  * Return: 1 or 0
  */
 
-int _putchar(char c);
+int _putchar(char *c);
 
 /**
  * print_alphabet - prints alphabet
