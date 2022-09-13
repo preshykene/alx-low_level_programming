@@ -3,10 +3,10 @@
 /**
  * _islower - checks if c is lower then returns a value 
  *
- *@void: Reurns nothing
+ *@c: integer assigned to c
  */
 
-int _islower(void)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
