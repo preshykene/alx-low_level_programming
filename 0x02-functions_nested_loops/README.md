@@ -1,1 +1,1 @@
-This is a read me file for nested loops and function
+This is a readme file for nested loops and function
