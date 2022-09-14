@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/**
+ * main - entry point
+ *
+ * Return: set to 0
+ */
+
+int main(void)
+{
+	int count = 0;
+	long int a = 1;
+	long int b = a;
+	long int c = a + b;
+
+	while (c < 4000000)
+	{
+		if (c % 2 == 0)
+		{
+			count += c;
+			a = b;
+			b = c;
+			c = a + b;
+		}
+	}
+		printf("%d\n", cunt)
+		return (0);
+}
