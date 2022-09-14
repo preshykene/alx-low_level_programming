@@ -16,11 +16,15 @@ int main(void)
 	printf("%ld, %ld, ", a, b);
 	while (count < 50)
 	{
-		printf("%ld, ", c);
+		printf("%ld", c);
 		count++;
 		a = b;
 		b = c;
 		c = a + b;
+		if (count < 50)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
