@@ -16,7 +16,7 @@ int main(void)
 	printf("%ld, %ld, ", a, b);
 	while (count < 50)
 	{
-		printf("%ld", c);
+		printf("%ld, ", c);
 		count++;
 		a = b;
 		b = c;
