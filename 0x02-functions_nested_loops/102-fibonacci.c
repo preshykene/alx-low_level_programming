@@ -24,7 +24,7 @@ int main(void)
 	}
 	if (count < 50)
 	{
-		printf(", ");
+		printf(" ");
 	}
 	printf("\n");
 	return (0);
