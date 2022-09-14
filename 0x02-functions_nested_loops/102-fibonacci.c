@@ -22,10 +22,6 @@ int main(void)
 		b = c;
 		c = a + b;
 	}
-	if (count < 50)
-	{
-		printf(" ");
-	}
 	printf("\n");
 	return (0);
 }
