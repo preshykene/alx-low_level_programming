@@ -11,7 +11,7 @@ int main(void)
 	int count = 0;
 	long int a = 1;
 	long int b = a + 1;
-	long int c = a + b;
+	long int c = 1;
 
 	while (b < 4000000)
 	{
