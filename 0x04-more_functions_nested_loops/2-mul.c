@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * mul - main entry
  * @a: first integer
