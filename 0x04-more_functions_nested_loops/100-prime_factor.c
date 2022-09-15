@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: set to 0
+ * main - prints prime numbers of 612852475143
+ * Return: 0 on success
  */
 
 int main(void)
