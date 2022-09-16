@@ -7,18 +7,13 @@
 
 int main(void)
 {
-	unsigned long num = 612852475143;
-	unsigned long divisor = 2;
+	unsigned long int i, j = 612852475143;
 
-	while (divisor != num)
+	for (i = 3; i < 782849; i = i + 2)
 	{
-		if (num % divisor == 0)
-		{
-			num = num / divisor;
-		}
-		else
-			divisor++;
+		while ((j % i == 0) && (j != i))
+			j = j / 1;
 	}
-	printf("%lu", num);
+	printf("%lu\n", j);
 	return (0);
 }
