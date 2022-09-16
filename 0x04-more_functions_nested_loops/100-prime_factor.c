@@ -12,7 +12,7 @@ int main(void)
 
 	while (divisor < num)
 	{
-		if (num % divisor == 0)
+		if (num % divisor == 2)
 		{
 			num /= divisor;
 			divisor = 2;
