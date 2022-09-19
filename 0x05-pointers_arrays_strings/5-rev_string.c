@@ -15,6 +15,6 @@ void rev_string(char *s)
 	{
 		j = s[i];
 		s[i] = s[_strlen(s) - i - 1];
-		s[_strlen(s) - i - 1] - j;
+		s[_strlen(s) - i - 1] = j;
 	}
 }
