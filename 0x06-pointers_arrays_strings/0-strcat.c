@@ -1,14 +1,13 @@
 #include "main.h"
 /**
  * _strcat - string to concat two arrays
- * 
+ *
  * @dest: destination of concat
  * @src: source of concat
  *
  * Return: Returns char value
  */
- 
- char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i, length;
 
