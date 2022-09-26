@@ -2,7 +2,9 @@
 #define NULL 0
 
 /**
- * _strpbrk - return pointer to byte in s that matches a byte in accep
+ * _strpbrk - return pointer to byte in s that matches a byte in accept
+ * @s: string to find stuff
+ * @accept: accepting arrays
  * Return: pointer to index of string at first occurence
  */
 
@@ -10,7 +12,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i = 0, j;
 
-	while (s[i] != '\0') 
+	while (s[i] != '\0')
 	{
 		for (j = 0; accept[j] != '\0'; j++) /* iterate through target */
 		{
@@ -22,6 +24,6 @@ char *_strpbrk(char *s, char *accept)
 		}
 		i++;
 	}
-	return (NULL); 
+	return (NULL);
 
 }
