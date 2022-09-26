@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* _memset - fills the first n bytes
-* @s: value to be set
-* @b: value to be set at
+* _memcpy - copies and fills dest from src
+* @dest: destination to copy to
+* @src: source to copy from
 * @n: nth amount of times
 *
-* Return: values of s
+* Return: values of dest
 */
 
 char *_memcpy(char *dest, char src, unsigned int n)
