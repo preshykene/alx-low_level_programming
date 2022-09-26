@@ -1,25 +1,27 @@
 #include "main.h"
+#define NULL 0
+
 /**
-* _strpbrk - finds string
-* @s: string to find stuff
-* @accept: accepting arrays
-*
-* Return: returns new value
-*/
+ * _strpbrk - return pointer to byte in s that matches a byte in accep
+ * Return: pointer to index of string at first occurence
+ */
+
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-	int j;
+	int i = 0, j;
 
-	for (i = 0; s[i] != '\n'; i++)
+	while (s[i] != '\0') 
 	{
-		for (j = 0; accept[j] != '\n'; j++)
+		for (j = 0; accept[j] != '\0'; j++) /* iterate through target */
 		{
-			if (s[i] == accept[j])
+			if (s[i] == accept[j]) /* stop at first match */
 			{
-				return (s + i);
+				s = &s[i]; /* set pointer to first occurence */
+				return (s);
 			}
 		}
+		i++;
 	}
-	return (0);
+	return (NULL); 
+
 }
