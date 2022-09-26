@@ -6,9 +6,9 @@
 *
 * Return: returns new value
 */
- char *_strpbrk(char *s, char *accept)
- {
- 	int i;
+char *_strpbrk(char *s, char *accept)
+{
+	int i;
 	int j;
 
 	for (i = 0; s[i] != '\n'; i++)
