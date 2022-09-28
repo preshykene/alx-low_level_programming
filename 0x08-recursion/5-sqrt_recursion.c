@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * result - holds result
  * @i: integer to guess
