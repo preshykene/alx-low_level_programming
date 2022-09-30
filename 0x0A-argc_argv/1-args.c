@@ -4,10 +4,18 @@
 * main - Entry point
 * @argc: argument count
 * @argv: argument vector
+* Return: always set to 0
 */
 
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	printf("%d\n", argc);
+	int i = 0, m;
+
+	while (i < argc)
+	{
+		m = i;
+		i++;
+	}
+	printf("%d\n", m);
 	return (0);
 }
