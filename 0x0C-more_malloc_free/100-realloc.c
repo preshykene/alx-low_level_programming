@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -81,4 +80,3 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	return (nptr);
 }
->>>>>>> b55cbaa4746e2b921cd8a5da1b98a2001b96838d
