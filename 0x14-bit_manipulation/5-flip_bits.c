@@ -1,65 +1,33 @@
 #include "main.h"
-
 /**
- * print_bin - prints binary rep of @n
- *
- * @number: decimal value
- *
- * Return: nothing
-*/
-void print_bin(unsigned long int number)
-{
-	if (number >> 1)
-		print_bin(number >> 1);
-
-	putc((number & 1) ? '1' : '0', stdout);
-}
-
-/**
- * flip_bits - a function that returns the number of bits you
- *             would need to flip to get from one number to
- *             another
- *
- * @n: decimal number
- * @m: the other decimal number
- *
- * Return: number of bits to flip to get @m from @n
-*/
+ * flip_bits - number of bits to flip a num to another
+ * Return: number of bits
+ * @n: n number
+ * @m: m number
+ */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int diff_bits = 0;
-	unsigned long int diff;
+	unsigned int i, count = 0;
 
-	/*xor n and b*/
-	diff = n ^ m;
+	for (i = 0; i < 64; i++)
+	{
+		if (get_bit(n, i) != get_bit(m, i))
+			count++;
+	}
+	return (count);
+}
+/**
+ * get_bit - get value of bit at index
+ * Return: value
+ * @n: num
+ * @index: index given
+ */
+int get_bit(unsigned long int n, unsigned int index)
+{
+	unsigned int c;
 
-	#ifdef DEBUG
-	printf("\n(n) %ld and (m) %ld in binary is ", n, m);
-	print_bin(n);
-	printf(" ");
-	print_bin(m);
-	printf(" diff is %ld and in binary is ", diff);
-	print_bin(diff);
-	printf("\n");
-	#endif
+	for (c = 0; c < index; c++)
+		n >>= 0x1;
 
-	/*keep shifting diff to right*/
-	do {
-		#ifdef DEBUG
-		printf("diff %ld before right shift ", diff);
-		print_bin(diff);
-		printf("\n");
-		#endif
-
-		diff_bits += (diff & 1);
-		diff >>= 1;
-
-		#ifdef DEBUG
-		printf("diff %ld after right shift ", diff);
-		print_bin(diff);
-		printf(" and diff_bit %d before leaving loop\n\n", diff_bits);
-		#endif
-	} while (diff > 0);
-
-	return (diff_bits);
+	return (n & 0x1);
 }
